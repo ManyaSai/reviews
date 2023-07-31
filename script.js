@@ -111,7 +111,7 @@ document.getElementById('reviewForm').addEventListener('submit', function (e) {
     id: reviews.length + 1,
     name: name,
     job: job,
-    img: "default_img3.png", // Use a default image URL or add user uploaded image URL here
+    img: "front/pics/default_img3.png", // Use a default image URL or add user uploaded image URL here
     text: message,
   };
 
