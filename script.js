@@ -55,8 +55,6 @@ function loadReviewsFromLocalStorage() {
     reviews = JSON.parse(storedReviews);
   }
 }
-/// Remove existing local storage on page load
-//localStorage.clear();
 
 // Show person based on item
 function showPerson(person) {
