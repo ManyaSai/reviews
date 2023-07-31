@@ -211,7 +211,7 @@ main {
   transition: all 4s;
 }
 .img-container::after {
-  font-family: "Font Awesome 5 Free";
+  font-family:'Times New Roman', Times, serif;
   font-weight: 900;
   content: "\f10e";
   position: absolute;
