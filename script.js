@@ -91,8 +91,6 @@ prevBtn.addEventListener('click', function () {
   showPerson(currentItem);
 });
 
-
-
 // Open review form container on hyperlink click
 document.getElementById('writeReviewLink').addEventListener('click', function () {
   document.querySelector('.review-form-container').style.display = 'flex';
@@ -135,6 +133,4 @@ document.getElementById('reviewForm').addEventListener('submit', function (e) {
   currentItem = reviews.length - 1;
   showPerson(currentItem);
 
-  // // Delete local storage after submitting the form
-  // localStorage.clear();
 });
