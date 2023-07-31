@@ -25,7 +25,7 @@ let reviews = [
     id: 4,
     name: 'bill anderson',
     job: 'the boss',
-    img: 'img6.jpeg',
+    img: 'https://www.course-api.com/images/people/person-3.jpeg',
     text: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
   },
 ];
