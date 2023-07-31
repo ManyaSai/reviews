@@ -159,7 +159,7 @@ main {
   display: grid;
   place-items: center;
   margin: 0 auto;
-  background-image: url("./img5.jpg");
+  background-image: url("./front/pics/img5.jpg");
   background-repeat: no-repeat;
   background-size:1368px;
   background-blend-mode:hard-light;
