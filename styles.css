@@ -48,8 +48,8 @@ Variables
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --light-shadow: 0 5px 15px rgb(245, 239, 239);
+  --dark-shadow: 0 5px 15px rgb(255, 252, 250);
   --max-width: 1170px;
   --fixed-width: 620px;
 }
@@ -76,9 +76,7 @@ body {
 ul {
   list-style-type: none;
 }
-a {
-  text-decoration: none;
-}
+
 h1,
 h2,
 h3,
@@ -119,7 +117,7 @@ p {
     font-size: 1.25rem;
   }
   body {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   h1,
   h2,
@@ -161,7 +159,7 @@ main {
   display: grid;
   place-items: center;
   margin: 0 auto;
-  background-image: url("./pic/img5.jpg");
+  background-image: url("./img5.jpg");
   background-repeat: no-repeat;
   background-size:1368px;
   background-blend-mode:hard-light;
@@ -181,7 +179,7 @@ main {
   
 }
 .review {
-  background-color: #f0f4f4b6;
+  background-color:honeydew;
   padding: 1.5rem 2rem;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -260,7 +258,7 @@ main {
   font-size: 1.25rem;
   background: transparent;
   border-color:transparent;
-  margin: 0 1.5rem;
+  margin: 0 7.5rem;
   transition: var(--transition);
   cursor: pointer;
 }
@@ -268,18 +266,75 @@ main {
 .next-btn:hover {
   color: var(--clr-primary-5);
 }
-.random-btn {
+a {
   margin-top: 0.5rem;
-  background:rgba(244, 247, 247, 0.875);
-  color: var(--clr-primary-5);
-  padding: 0.25rem 0.5rem;
-  text-transform: capitalize;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  border-color: var(--clr-primary-5);
+  background:rgba(231, 238, 239, 0.875);
+  color:darkblue;
+  padding: 0.35rem 0.7rem;
+  border-radius:var(--radius);
+  transition: 0 .3s;
+  border-color:#fff;
+  position: relative;
+  top: 40px;
+  left:250px;
   cursor: pointer;
 }
-.random-btn:hover {
-  background: var(--clr-primary-5);
+a:hover {
+  background:rgb(201, 158, 213);
   color: var(--clr-primary-1);
+}
+/* Review form container (new styles) */
+.review-form-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-form {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.review-form h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.review-form button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--clr-primary-5);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-form button[type="button"] {
+  background: #ccc;
+  margin-top: 0.5rem;
 }
